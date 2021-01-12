@@ -1,0 +1,49 @@
+.container {
+  background-color: #e7ebe3;
+  margin: 0 auto;
+  width:980px;
+  height:600px;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.ball {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(201, 201, 5);
+  position: absolute;
+  -webkit-animation: moveX 1s linear 0s infinite alternate, moveY 3.2s  linear 0s infinite alternate;
+  -moz-animation: moveX 1s linear 0s infinite alternate moveY 2.5s linear infinite alternate;
+  -o-animation: moveX 1s linear 0s infinite alternate moveY 2.5s linear 0s infinite alternate;
+   animation: moveX 1s linear 0s infinite alternate, moveY 2.5s linear 0s infinite alternate;
+}
+
+@-webkit-keyframes moveX {
+  from { left: 0; } to { left: 940px; }
+}
+@-moz-keyframes moveX {
+  from { left: 0; } to { left: 940px; }
+}
+@-o-keyframes moveX {
+  from { left: 0; } to { left: 940px; }
+}
+@keyframes moveX {
+  from { left: 0; } to { left: 940px; }
+}
+
+@-webkit-keyframes moveY {
+  from { top: 0; } to { top: 550px; }
+}
+@-moz-keyframes moveY {
+  from { top: 0; } to { top: 550px; }
+}
+@-o-keyframes moveY {
+  from { top: 0; } to { top: 550px; }
+}
+@keyframes moveY {
+  from { top: 0; } to { top: 550px; }
+}
+
+
